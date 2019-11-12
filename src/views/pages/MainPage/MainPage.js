@@ -1,0 +1,1 @@
+// main view for actor and movie list
