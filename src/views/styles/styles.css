@@ -8346,21 +8346,8 @@ video {
   z-index: auto;
 }
 
-.btn {
-  font-weight: 700;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  border-radius: 0.25rem;
-  margin: 0.5rem;
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-}
-
-.btn:hover {
-  font-weight: 700;
-  color: #b2f5ea;
-  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+.my_height {
+  height: 80%;
 }
 
 @media (min-width: 640px) {

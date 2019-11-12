@@ -4,6 +4,7 @@ import * as actionTypes from './actions';
 
 const initialState = {
     // fetch random actor from api
+    searchQuery: '',
     actor: 'Kijanek Rivs'
 }
 

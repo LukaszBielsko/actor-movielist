@@ -9,7 +9,7 @@ const AppHeader = (props) => {
                 <div 
                     className="bg-gray-900 border-1 border-black border-2 rounded text-white py-2 px-4 mr-auto font-bold">GITHUB</div>
 
-                <div className="border-black border-2 rounded bg-gray-900 p-2 text-white font-bold flex"  >
+                <div className="border-black border-2 rounded bg-gray-900 p-2 text-white font-bold flex "  >
                     <span>???</span>
                     <input type="text" className="bg-gray-900 ml-2 font-bold text-white " placeholder="search / dropdown list">
                  </input>
