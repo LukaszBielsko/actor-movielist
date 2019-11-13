@@ -7,7 +7,7 @@ import './styles/styles.css'
 
 import MainPage from '../views/pages/MainPage';
 
-import reducer from '../store/reducer';
+import reducer from '../store/reducers/search';
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 const store = createStore(reducer, /* preloadedState, */ composeEnhancers(
