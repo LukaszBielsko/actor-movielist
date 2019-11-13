@@ -21,6 +21,7 @@ const AppHeader = (props) => {
                         className="bg-gray-900 ml-2 font-bold text-white "
                         placeholder="search / dropdown list">
                     </input>
+                    <span onClick={props.clearQuery}>  X  </span>
                 </div>
             </div>
         </>
@@ -37,7 +38,8 @@ const mapStatetoProps = state => {
 
 const mapDispatchToProps = dispatch => {
    return {
-       getSearchQuery: input => dispatch(actionCreators.searchQuery(input)) 
+       getSearchQuery: input => dispatch(actionCreators.searchQuery(input)) ,
+       clearQuery: () => dispatch(actionCreators.clearQuery())
    }
 }
 

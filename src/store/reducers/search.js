@@ -3,7 +3,8 @@ import * as actionTypes from '../actions/actionTypes'
 
 
 const initialState = {
-    searchQuery: ''
+    searchQuery: '',
+    actorsNames: null
 }
 
 const reducer = (state = initialState, action) => {
@@ -11,12 +12,15 @@ const reducer = (state = initialState, action) => {
         case actionTypes.SEARCH_QUERY:
             return {
                 ...state,
-                searchQuery: action.input
+                searchQuery: action.input,
+                actorsNames: action.actorsNames
+
             }
         case actionTypes.CLEAR_QUERY:
             return {
                 ...state,
-                searchQuery: ''
+                searchQuery: '',
+                actorsNames: null
             }
         default:
             return state
