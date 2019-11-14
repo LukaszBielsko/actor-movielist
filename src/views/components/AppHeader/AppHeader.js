@@ -1,6 +1,5 @@
 import React from 'react';
 import { connect } from 'react-redux';
-// make index in actions export needed stuff
 import * as actionCreators from '../../../store/actions';
 
 
@@ -12,7 +11,7 @@ const AppHeader = (props) => {
             <p
                 key={actor.id}
                 data-id={actor.id}
-                className="m-2 bg-gray-700"
+                className="m-2 bg-gray-700 py-1 pl-2 rounded-lg hover:bg-gray-600"
                 onClick={e => props.getActorId(e.target.dataset.id)}>
                 {actor.name}
             </p>)
@@ -35,7 +34,7 @@ const AppHeader = (props) => {
                             className="bg-gray-900 ml-2 font-bold text-white "
                             placeholder="search / dropdown list">
                         </input>
-                        <div className="bg-gray-900">
+                        <div className="bg-gray-900 z-10 rounded-lg ">
                             {actorsList}
                         </div>
                     </div>

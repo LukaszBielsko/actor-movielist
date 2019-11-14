@@ -12,9 +12,12 @@ const MovieListCard = (props) => {
             </li>)
 
     return (
-        <ul>
-            {movieList}
-        </ul>
+        <>
+            <h1 className="text-6xl font-bold tracking-widest text-orange-400 ml-4 text-center ">Movie List</h1>
+            <ul>
+                {movieList}
+            </ul>
+        </>
     );
 };
 

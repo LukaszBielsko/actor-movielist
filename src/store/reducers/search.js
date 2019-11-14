@@ -3,7 +3,7 @@ import * as actionTypes from '../actions/actionTypes'
 
 
 const initialState = {
-    searchQuery: '',
+    searchQuery: 'Tom Hanks',
     actorsNames: null
 }
 
