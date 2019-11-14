@@ -1,5 +1,6 @@
 import React from 'react';
 import ActorCard from '../ActorCard/ActorCard';
+import MovieListCard from '../MovieListCard/MovieListCard';
 
 const MovieCard = (props) => {
 
@@ -11,7 +12,7 @@ const MovieCard = (props) => {
             </div>
 
             <div className="my_height mr-2 mt-4 mb-2 border-black border-2 w-1/2 h-56 p-10 ">
-                <p>list of movies</p>
+                <MovieListCard/>
             </div>
         </div>
     );

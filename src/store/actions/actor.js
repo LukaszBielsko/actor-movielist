@@ -12,7 +12,7 @@ S`)
         let actorImages = fetch(`https://api.themoviedb.org/3/person/${id}/images?api_key=${apiKey}`).then(res => res.json())
 
         Promise.all([actorInfo, actorMovies, actorImages]).then(result => {
-            dispatch(saveActor(id, result[0], result[1], result[2].profiles[0].file_path))
+            dispatch(saveActor(id, result[0], result[1].cast, result[2].profiles[0].file_path))
         })
     }
 }

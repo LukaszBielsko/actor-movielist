@@ -3,7 +3,7 @@ import * as actionTypes from '../actions/actionTypes'
 
 const initialState = {
     actorID: null,
-    actorMovies: [],
+    actorMovies: null,
     actorInfo: null,
     actorImageURL: null
 }
