@@ -7,8 +7,16 @@ import * as actionCreators from '../../../store/actions';
 const AppHeader = (props) => {
 
     let actorsList = null;
-    if ( props.actorsNames){
-        actorsList =  props.actorsNames.map(actor => <p className="m-2 bg-gray-700">{actor.name}</p>)
+    if (props.actorsNames) {
+        actorsList = props.actorsNames.map(actor => (
+            <p
+                key={actor.id}
+                data-id={actor.id}
+                className="m-2 bg-gray-700"
+                onClick={e => props.getActorId(e.target.dataset.id)}>
+                {actor.name}
+            </p>)
+        )
     }
 
     return (
@@ -28,7 +36,7 @@ const AppHeader = (props) => {
                             placeholder="search / dropdown list">
                         </input>
                         <div className="bg-gray-900">
-                           {actorsList}
+                            {actorsList}
                         </div>
                     </div>
                     <span onClick={props.clearQuery}>  X  </span>
@@ -40,17 +48,17 @@ const AppHeader = (props) => {
 
 
 const mapStatetoProps = state => {
-    const { searchQuery, actorsNames } = state
     return {
-        searchQuery,
-        actorsNames
+        searchQuery: state.search.searchQuery,
+        actorsNames: state.search.actorsNames
     }
 }
 
 const mapDispatchToProps = dispatch => {
     return {
         getSearchQuery: input => dispatch(actionCreators.searchQuery(input)),
-        clearQuery: () => dispatch(actionCreators.clearQuery())
+        clearQuery: () => dispatch(actionCreators.clearQuery()),
+        getActorId: (id) => dispatch(actionCreators.actorId(id))
     }
 }
 
