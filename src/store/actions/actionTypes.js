@@ -5,3 +5,5 @@
 
 export const SEARCH_QUERY = 'SEARCH_QUERY'
 export const CLEAR_QUERY = 'CLEAR_QUERY'
+
+export const ACTOR_ID = 'ACTOR_ID'
