@@ -4,7 +4,8 @@ import * as actionTypes from '../actions/actionTypes'
 const initialState = {
     actorID: null,
     actorMovies: [],
-    actorInfo: null
+    actorInfo: null,
+    actorImageURL: null
 }
 
 const reducer = (state = initialState, action) => {
@@ -13,7 +14,9 @@ const reducer = (state = initialState, action) => {
             return {
                 ...state,
                 actorID: action.id,
-                actorInfo: action.info
+                actorInfo: action.info,
+                actorMovies: action.movies,
+                actorImageURL: action.image
             }
             default:
                 return {
