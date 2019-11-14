@@ -2,15 +2,18 @@ import * as actionTypes from '../actions/actionTypes'
 
 
 const initialState = {
-    actorID: null
+    actorID: null,
+    actorMovies: [],
+    actorInfo: null
 }
 
 const reducer = (state = initialState, action) => {
     switch(action.type){
-        case actionTypes.ACTOR_ID:
+        case actionTypes.ACTOR:
             return {
                 ...state,
                 actorID: action.id,
+                actorInfo: action.info
             }
             default:
                 return {

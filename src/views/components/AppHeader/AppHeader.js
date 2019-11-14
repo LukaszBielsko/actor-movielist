@@ -58,7 +58,7 @@ const mapDispatchToProps = dispatch => {
     return {
         getSearchQuery: input => dispatch(actionCreators.searchQuery(input)),
         clearQuery: () => dispatch(actionCreators.clearQuery()),
-        getActorId: (id) => dispatch(actionCreators.actorId(id))
+        getActorId: (id) => dispatch(actionCreators.getActor(id))
     }
 }
 
