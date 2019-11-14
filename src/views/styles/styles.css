@@ -8347,7 +8347,7 @@ video {
 }
 
 .my_height {
-  height: 80%;
+  height: 95%;
 }
 
 @media (min-width: 640px) {
@@ -39300,4 +39300,4 @@ video {
   .xl\:z-auto {
     z-index: auto;
   }
-}
+} 

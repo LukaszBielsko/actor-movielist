@@ -4,5 +4,5 @@ export {
 } from './search'
 
 export {
-    actorId,
+    getActor,
 } from './actor'
