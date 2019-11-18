@@ -2,10 +2,8 @@ import React from 'react';
 
 import AppHeader from './AppHeader';
 
-import Enzyme, {shallow} from 'enzyme';
-import EnzymeAdapter from 'enzyme-adapter-react-16';
+import  {shallow} from 'enzyme';
 
-Enzyme.configure({ adapter: new EnzymeAdapter() })
 
 const setup = (props = {}, state = null) => wrapper = shallow(<AppHeader {...props} />)
 
