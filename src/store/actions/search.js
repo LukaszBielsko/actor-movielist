@@ -8,7 +8,7 @@ export const clearQuery = () => {
 }
 
 
-const saveActorsNames = (input, actorsNames) => {
+export const saveActorsNames = (input, actorsNames) => {
     return {
         type: actionTypes.SEARCH_QUERY,
         input,

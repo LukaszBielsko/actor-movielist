@@ -29,7 +29,7 @@ S`)
 //     }
 // }  
 
-const saveActor = (id, info, movies, image) => {
+export const saveActor = (id, info, movies, image) => {
     return {
         type: actionTypes.ACTOR,
         id,
