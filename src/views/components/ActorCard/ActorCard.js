@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-
+import PropTypes from 'prop-types';
 
 const ActorCard = (props) => {
 
@@ -36,6 +36,11 @@ const mapStateToProps = state => {
         actor: state.actor.actorInfo,
         actorImage: state.actor.actorImageURL
     }
+}
+
+ActorCard.propTypes = {
+    actor: PropTypes.object,
+    actorImage: PropTypes.string
 }
 
 

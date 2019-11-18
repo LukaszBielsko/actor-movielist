@@ -3,6 +3,8 @@ import ActorCard from '../ActorCard/ActorCard';
 import MovieListCard from '../MovieListCard/MovieListCard';
 import Spinner from '../../../spinner';
 
+/* TODO change the name of this comp */ 
+
 const MovieCard = (props) => {
 
     return (

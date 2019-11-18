@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import * as actionCreators from '../../../store/actions';
+import PropTypes from 'prop-types';
 
 
 const AppHeader = (props) => {
@@ -64,6 +65,11 @@ const mapDispatchToProps = dispatch => {
         clearQuery: () => dispatch(actionCreators.clearQuery()),
         getActorId: (id) => dispatch(actionCreators.getActor(id))
     }
+}
+
+AppHeader.propTypes = {
+    searchQuery: PropTypes.string,
+    actorsNames: PropTypes.array
 }
 
 
