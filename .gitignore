@@ -1,8 +1,10 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
+#vscode config
+.vscode
 
 #api
-movieDBApiKey.js
+movieDBApi.js
 
 # dependencies
 /node_modules
