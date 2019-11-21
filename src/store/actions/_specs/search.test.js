@@ -12,7 +12,8 @@ describe('actions', () => {
 
     test('should return saveActorsNames action', () => {
         const input = "Tom"
-        const actorsNames = ['Tom z Kóz', 'Tom Hanks', 'Tom Hardy']
+        const actorsNames = ['Tom z Kóz', 'Tom Hanks', 'Tom Handy']
+
         const expectedAction = {
             type: actionTypes.SEARCH_QUERY,
             input,
@@ -31,4 +32,5 @@ const saveActorsNames = (input, actorsNames) => {
         input,
         actorsNames
     };
+    
 }
