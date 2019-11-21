@@ -7,7 +7,7 @@ import EnzymeAdapter from 'enzyme-adapter-react-16';
 
 Enzyme.configure({adapter: new EnzymeAdapter()})
 
-it('renders withour crashing', () => {
+it('renders without crashing', () => {
   // const wrapper = shallow(<App/>) 
 })
 
