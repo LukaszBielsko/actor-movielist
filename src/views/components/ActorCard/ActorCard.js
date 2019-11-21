@@ -9,9 +9,9 @@ const ActorCard = (props) => {
     if (props.actor) {
         actorInfo = (
             <>
-                <div className="flex  flex-row">
+                <div className="flex  flex-col">
                     <img
-                        className="rounded-lg"
+                        className="rounded-lg h-64"
                         src={`http://image.tmdb.org/t/p/w185${props.actorImage}`} alt="actor-picture" />
                     <div>
                         <h1 data-test="actor-name"
@@ -24,7 +24,6 @@ const ActorCard = (props) => {
                     <p data-test="bio" className="mt-3 text-justify">{props.actor.biography}</p>
                 </div>
             </>)
-        return actorInfo
     }
 
     return (
@@ -32,7 +31,7 @@ const ActorCard = (props) => {
             data-test="actor-card"
             className="my_height ml-2 mt-4 mb-2 border-black border-2 w-1/2 h-56 p-5 m-4 bg-gray-800 rounded-lg ">
             {props.actor
-                ? { actorInfo }
+                ?  actorInfo 
                 : <p data-test="start-search-info"> start your search</p>
             }
         </div>

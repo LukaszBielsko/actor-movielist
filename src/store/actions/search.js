@@ -30,6 +30,7 @@ export const searchQuery = (input) => {
                         }
                     })
                     dispatch(saveActorsNames(input, onlyNames));
+
                 })
         } else {
             // had to do if else as i was not able to clear last letter of input
