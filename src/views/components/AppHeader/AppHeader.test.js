@@ -29,6 +29,13 @@ describe('render', () => {
             expect(input.length).toBe(1)
         });
     })
+
+    describe('actors list', () => {
+        test('NOT IMPL renders actors list upon receiving input from user', () => {
+            // some async magic testing :) 
+        });
+    })
+
 })
 
 describe('update state', () => {
