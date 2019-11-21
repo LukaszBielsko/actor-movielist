@@ -1,7 +1,7 @@
 import React from 'react';
 
 import AppHeader from '../../components/AppHeader';
-import MovieCard from '../../components/MovieCard/MovieCard';
+import ActorMovieCard from '../../components/ActorMovieCard/ActorMovieCard';
 
 const MainPage = (props) => {
     
@@ -14,7 +14,7 @@ const MainPage = (props) => {
 
             {/* only one comp for now - so no router at the moment */}
             {/* when more pages comps - routes and switch */}
-            <MovieCard />
+            <ActorMovieCard />
         </div>
     
     );

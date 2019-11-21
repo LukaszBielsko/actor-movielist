@@ -1,5 +1,5 @@
 import * as actionTypes from './actionTypes';
-import apiKey from '../../movieDBApiKey'
+import {searchActorsApiURL} from '../../movieDBApi'
 
 export const clearQuery = () => {
     return {
@@ -19,7 +19,7 @@ export const saveActorsNames = (input, actorsNames) => {
 export const searchQuery = (input) => {
     return dispatch => {
         if (input) {
-            fetch(`https://api.themoviedb.org/3/search/person?api_key=${apiKey}&query=${input}`)
+            fetch(searchActorsApiURL(input))
                 .then(res => res.json())
                 .then(data => {
                     const newData = data.results.filter(el => el.known_for_department === 'Acting')
