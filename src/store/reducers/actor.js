@@ -8,7 +8,7 @@ const initialState = {
     actorImageURL: null
 }
 
-const reducer = (state = initialState, action) => {
+const actorReducer = (state = initialState, action) => {
     switch(action.type){
         case actionTypes.ACTOR:
             return {
@@ -25,4 +25,4 @@ const reducer = (state = initialState, action) => {
     }
 }
 
-export default reducer;
+export default actorReducer;

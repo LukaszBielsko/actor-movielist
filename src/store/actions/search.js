@@ -40,12 +40,3 @@ export const searchQuery = (input) => {
 }
 
 
-
-
-// export const searchQuery = (input) => {
-//     return {
-//         type: actionTypes.SEARCH_QUERY,
-//         input
-//     }
-// }
-

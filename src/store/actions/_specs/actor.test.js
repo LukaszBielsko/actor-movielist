@@ -18,5 +18,5 @@ describe('actions', () => {
 
         expect(action.saveActor(id, info, movies, image)).toEqual(expectedAction)
 
-});
+    });
 })

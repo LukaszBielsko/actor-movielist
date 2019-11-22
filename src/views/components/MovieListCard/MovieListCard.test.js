@@ -41,7 +41,6 @@ describe('movie list card', () => {
 
             test('should render proper movie titles', () => {
                 const movieListElement = findByTestAttr(wrapper, 'Rocky 567')
-                console.log(wrapper.debug())
                 expect(movieListElement.text()).toEqual('Rocky 567')
             });
 

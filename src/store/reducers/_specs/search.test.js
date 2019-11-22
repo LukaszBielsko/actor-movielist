@@ -1,7 +1,6 @@
 import searchReducer from '../search';
-import { searchQuery } from '../../actions/search';
 
-describe('reducer', () => {
+describe('search reducer', () => {
   const initialState = {
     searchQuery: 'Tom Hanks',
     actorsNames: null
@@ -16,19 +15,4 @@ describe('reducer', () => {
     expect(newState).toEqual(initialState)
   });
 
-  /* wrong assumptions here
-  cant test at the momemnt as it is running async code - dont know how
-  
-   */
-  // test('should return state with searchQuery changed to inputed value', () => {
-  //   const newState = searchReducer(initialState, searchQuery('Arni Schwarc'))
-  //   const search = searchQuery('Arni Schwarc')
-  //   console.log(search )
-  //   const expectedState = {
-  //     searchQuery: 'Arni Schwarc',
-  //     actorsNames: null
-  //   }
-  //   expect(newState).toEqual(expectedState)
-  // });
-
-}) 
+})

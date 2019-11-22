@@ -1,7 +1,6 @@
 import * as actionTypes from '../actionTypes'
 import * as action from '../search'
 
-
 describe('actions', () => {
     test('should return clearQuery action', () => {
         const expectedAction = {
@@ -23,14 +22,3 @@ describe('actions', () => {
     });
 })
 
-
-
-
-const saveActorsNames = (input, actorsNames) => {
-    return {
-        type: actionTypes.SEARCH_QUERY,
-        input,
-        actorsNames
-    };
-    
-}
