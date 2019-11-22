@@ -1,5 +1,5 @@
 import * as actionTypes from './actionTypes';
-import apiKey from '../../movieDBApiKey'
+import {searchActorsApiURL} from '../../movieDBApi'
 
 export const clearQuery = () => {
     return {
@@ -8,7 +8,7 @@ export const clearQuery = () => {
 }
 
 
-const saveActorsNames = (input, actorsNames) => {
+export const saveActorsNames = (input, actorsNames) => {
     return {
         type: actionTypes.SEARCH_QUERY,
         input,
@@ -19,7 +19,7 @@ const saveActorsNames = (input, actorsNames) => {
 export const searchQuery = (input) => {
     return dispatch => {
         if (input) {
-            fetch(`https://api.themoviedb.org/3/search/person?api_key=${apiKey}&query=${input}`)
+            fetch(searchActorsApiURL(input))
                 .then(res => res.json())
                 .then(data => {
                     const newData = data.results.filter(el => el.known_for_department === 'Acting')
@@ -30,6 +30,7 @@ export const searchQuery = (input) => {
                         }
                     })
                     dispatch(saveActorsNames(input, onlyNames));
+
                 })
         } else {
             // had to do if else as i was not able to clear last letter of input
@@ -38,13 +39,4 @@ export const searchQuery = (input) => {
     }
 }
 
-
-
-
-// export const searchQuery = (input) => {
-//     return {
-//         type: actionTypes.SEARCH_QUERY,
-//         input
-//     }
-// }
 

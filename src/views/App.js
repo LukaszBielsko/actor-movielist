@@ -10,7 +10,7 @@ import MainPage from '../views/pages/MainPage';
 import rootReducer from '../store/reducers';
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
-const store = createStore(rootReducer, /* preloadedState, */ composeEnhancers(
+const store = createStore(rootReducer, composeEnhancers(
   applyMiddleware(thunk)
 ));
 
