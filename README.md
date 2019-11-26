@@ -13,5 +13,6 @@ React application for getting movie list for given actor.
 - Fetch-mock
 
 ### Things to improve
+
 - CSS layout
 - async testing
